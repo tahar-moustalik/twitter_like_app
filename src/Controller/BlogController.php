@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Class BlogController
  * @package App\Controller
- * @Route("/blog")
+ * @Route("/")
  */
 class BlogController extends AbstractController
 {
