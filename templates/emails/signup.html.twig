@@ -1,0 +1,10 @@
+{# templates/emails/signup.html.twig #}
+<h1>Welcome {{ user.fullName }}!</h1>
+
+<p>
+    You signed up as {{ user.username }} the following email:
+</p>
+<p><code>{{ user.email }}</code></p>
+ <h1>Please confirm account by clicking this
+     <a href="{{ url('security_confirm', {'token' : user.confirmationToken}) }}">Confirmation Link</a>
+ </h1>
